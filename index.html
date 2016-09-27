@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>细胞自动机 Cellular Automata</title> 
+  <link type="text/css" rel="stylesheet" href="style.css" /> 
+ </head> 
+ <body> 
+   <p> 细胞自动机 Cellular Automata</p>
+   <label for="block">网格大小</label> 
+   <input type="number" id="block" min="3" max="30" value="8" /> 
+   <label for="width">宽度</label> 
+   <input type="number" id="width" min="1" max="200" value="50" /> 
+   <label for="height">高度</label> 
+   <input type="number" id="height" min="1" max="200" value="50" /> 
+   <br></br>
+   <input type="button" id="start" value="开始" onclick="Start()" /> 
+   <input type="button" id="next" value="下一步" onclick="Next()" /> 
+   <label> <input type="checkbox" id="auto" onchange="Auto()" /> 自动 </label>
+   <label> <input type="checkbox" id="cool" onchange="Cool()" /> 高级模式 </label>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp步数:
+   <span id="step">0</span> 
+   <br></br>
+   <div id="map"></div>   
+ </body>
+ <script src="js/game.js"></script> 
+</html>

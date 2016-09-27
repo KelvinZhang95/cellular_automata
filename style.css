@@ -1,0 +1,28 @@
+#map div {
+	border : 0px solid #ffffff;
+    position: absolute;
+}
+
+#map div.die {
+	
+	-webkit-border-radius: 0px;
+    background: #303030;
+}
+
+#map div.alive {
+	-webkit-border-radius: 0px;
+    background: #E3AACB;
+}
+#map div.just_die {
+
+	-webkit-border-radius: 0px;
+    background: #666666;
+}
+
+#map {
+	/*border : 3px solid #555555;*/
+	background: grey;
+    position: relative;
+    left: 0;
+    top: 0;
+}
